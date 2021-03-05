@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="src/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Weather Project Final</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/8f13314b84.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styleW/stylewea.css">
+    <title>Show me the Weather☀️ </title>
 </head>
-<body>
+
+<body class="header">
     <div class="container">
 
+        <button id="city">
+        </button>
+        <h3>
+
+        </h3>
+        <form id="search-city" 🔎>
+            <input class="city" id="city-input" type="text" placeholder="Enter a city" autocomplete="on" />
+            <input class="search" type="submit" value="🔎" />
+        </form>
+
+        <h5 id="today">
+            <span id="celcius">°C</span>
+        </h5>
+        <button id="locationButton">
+            📍
+        </button>
+        <ul>
+
+            <li>Humidity: <span id="humidity"></span> %
+            </li>
+            <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="col">
+                Monday
+                <div class="card-body1">
+                    <i class="fas fa-bolt"></i>
+                    <p id="monday">°C</p>
+
+                </div>
+            </div>
+            <div class="col">
+                Thursday
+                <div class="card-body2">
+                    <i class="fas fa-cloud"></i>
+                    <p id="thursday">°C</p>
+                </div>
+            </div>
+
+            <div class="col">
+                Wednesday
+                <div class="card-body3">
+                    <i class="fas fa-snowflake"></i>
+                    <p id="wednesday">°C </p>
+                </div>
+            </div>
+
+            <div class="col">
+
+                Thursday
+                <div class="card-body4">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <p id="thursday">°C</p>
+
+                </div>
+            </div>
+            <div class="col">
+                Friday
+                <div class="card-body5">
+                    <i class="fas fa-sun"></i>
+                    <p id="friday"> °C </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
-
-
-
-
-        
-</div>
-    <script src="src/script.js"></script>
+    <script src="styleW/index.js">   </script>
 </body>
+
 </html>

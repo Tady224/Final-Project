@@ -1,0 +1,148 @@
+.container {
+  font-family: "Raleway", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(
+    5deg,
+    #a1d9f3,
+    rgb(56, 154, 219),
+    rgb(6, 84, 173),
+    white
+  );
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: #a1d9f3;
+}
+
+.city {
+  border-radius: 30px;
+  border: none;
+  margin: 10px auto;
+  padding: 10px 10px 10px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(6, 84, 173);
+}
+
+.search {
+  border-radius: 30px;
+  border: none;
+  margin: 10px auto;
+  padding: 10px 10px 10px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(6, 84, 173);
+}
+
+.div1 {
+  color: rgb(251, 253, 255);
+}
+
+#city {
+  display: block;
+  margin: 0 auto;
+  border: blue;
+  color: white;
+  background-color: #a1d9f317;
+  border-radius: 40px;
+  font-size: 50px;
+  padding: 10px 10px 10px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  right: -200px;
+  top: 60px;
+}
+
+#locationButton {
+  border-radius: 40px;
+  border: none;
+  margin: 10px auto;
+  padding: 10px 10px 10px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(6, 84, 173);
+  position: relative;
+  top: -145px;
+  left: 340px;
+}
+.header {
+  display: block;
+  margin: 8px;
+  color: #a1d9f3;
+}
+
+.row {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 5px 5px;
+  font-size: larger;
+}
+p {
+  color: rgb(35, 35, 75);
+  font-size: 30px;
+}
+
+img {
+  border-radius: 30px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: -300px;
+  top: 70px;
+}
+
+form,
+h3 {
+  position: relative;
+  top: 0px;
+  left: 100px;
+  color: rgb(52, 27, 197);
+}
+
+h5 {
+  color: white;
+  font-size: 60px;
+  position: relative;
+  top: -20px;
+  right: -670px;
+}
+li {
+  color: white;
+  position: relative;
+  top: -50px;
+  left: 70px;
+  margin: 0 auto;
+  font-size: larger;
+  list-style: none;
+}
+
+#monday {
+  color: white;
+}
+#tuesday {
+  color: white;
+}
+#wednesday {
+  color: white;
+}
+#thursday {
+  color: white;
+}
+#friday {
+  color: white;
+}
+
+.card-body1,
+.card-body4 {
+  color: rgb(235, 231, 38);
+  font-size: 60px;
+}
+
+.card-body2,
+.card-body5 {
+  color: rgb(52, 27, 197);
+  font-size: 60px;
+}
+.card-body3 {
+  color: aliceblue;
+  font-size: 60px;
+}
