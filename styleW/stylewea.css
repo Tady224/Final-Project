@@ -4,9 +4,9 @@
   margin: 0 auto;
   background: linear-gradient(
     5deg,
-    #a1d9f3,
-    rgb(56, 154, 219),
-    rgb(6, 84, 173),
+    #dae2e6,
+    rgb(140, 199, 238),
+    rgb(148, 159, 172),
     white
   );
   padding: 10px 10px;
@@ -33,15 +33,15 @@
 }
 
 .div1 {
-  color: rgb(251, 253, 255);
+  color: white;
 }
 
 #city {
   display: block;
   margin: 0 auto;
-  border: blue;
+  border: rgb(255, 255, 255);
   color: white;
-  background-color: #a1d9f317;
+  background-color: #a1d9f300;
   border-radius: 40px;
   font-size: 50px;
   padding: 10px 10px 10px;
@@ -57,10 +57,10 @@
   margin: 10px auto;
   padding: 10px 10px 10px;
   font-family: "Raleway", sans-serif;
-  color: rgb(6, 84, 173);
+  color: rgb(252, 252, 252);
   position: relative;
-  top: -145px;
-  left: 340px;
+  top: -64px;
+  left: 335px;
 }
 .header {
   display: block;
@@ -68,81 +68,35 @@
   color: #a1d9f3;
 }
 
-.row {
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px 5px 5px;
-  font-size: larger;
-}
-p {
-  color: rgb(35, 35, 75);
-  font-size: 30px;
-}
-
-img {
-  border-radius: 30px;
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  right: -300px;
-  top: 70px;
-}
-
 form,
 h3 {
   position: relative;
   top: 0px;
   left: 100px;
-  color: rgb(52, 27, 197);
+  color: rgb(244, 244, 248);
 }
 
-h5 {
+.units {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  top: -213px;
+  right: -635px;
+}
+#today {
   color: white;
   font-size: 60px;
   position: relative;
-  top: -20px;
-  right: -670px;
+  top: -150px;
+  right: -560px;
 }
+
 li {
   color: white;
   position: relative;
-  top: -50px;
-  left: 70px;
+  top: -65px;
+  left: 680px;
   margin: 0 auto;
-  font-size: larger;
+  font-size: 15px;
   list-style: none;
-}
-
-#monday {
-  color: white;
-}
-#tuesday {
-  color: white;
-}
-#wednesday {
-  color: white;
-}
-#thursday {
-  color: white;
-}
-#friday {
-  color: white;
-}
-
-.card-body1,
-.card-body4 {
-  color: rgb(235, 231, 38);
-  font-size: 60px;
-}
-
-.card-body2,
-.card-body5 {
-  color: rgb(52, 27, 197);
-  font-size: 60px;
-}
-.card-body3 {
-  color: aliceblue;
-  font-size: 60px;
 }

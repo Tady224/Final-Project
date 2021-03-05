@@ -18,76 +18,33 @@
 
 <body class="header">
     <div class="container">
-
         <button id="city">
         </button>
         <h3>
-
         </h3>
         <form id="search-city" 🔎>
             <input class="city" id="city-input" type="text" placeholder="Enter a city" autocomplete="on" />
             <input class="search" type="submit" value="🔎" />
         </form>
-
-        <h5 id="today">
-            <span id="celcius">°C</span>
-        </h5>
         <button id="locationButton">
             📍
         </button>
-        <ul>
-
-            <li>Humidity: <span id="humidity"></span> %
-            </li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-        </ul>
-        <br />
-        <br />
 
         <div class="row">
-            <div class="col">
-                Monday
-                <div class="card-body1">
-                    <i class="fas fa-bolt"></i>
-                    <p id="monday">°C</p>
+        <div class="col-md6">
 
-                </div>
-            </div>
-            <div class="col">
-                Thursday
-                <div class="card-body2">
-                    <i class="fas fa-cloud"></i>
-                    <p id="thursday">°C</p>
-                </div>
-            </div>
-
-            <div class="col">
-                Wednesday
-                <div class="card-body3">
-                    <i class="fas fa-snowflake"></i>
-                    <p id="wednesday">°C </p>
-                </div>
-            </div>
-
-            <div class="col">
-
-                Thursday
-                <div class="card-body4">
-                    <i class="fas fa-cloud-showers-heavy"></i>
-                    <p id="thursday">°C</p>
-
-                </div>
-            </div>
-            <div class="col">
-                Friday
-                <div class="card-body5">
-                    <i class="fas fa-sun"></i>
-                    <p id="friday"> °C </p>
-
-                </div>
-            </div>
+        <ul>
+        <li>Humidity: <span id="humidity"></span> %
+        </li>
+        <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
         </div>
-    </div>
+        <div class="col-md-6">
+            <div id="today">
+            </div>
+            <span class="units">
+                °C | °F
+            </span>
     </div>
 
 

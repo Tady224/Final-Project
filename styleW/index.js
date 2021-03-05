@@ -1,7 +1,4 @@
 
-
-
-
 let now = new Date();
 let h3 = document.querySelector("h3");
 let days = [
