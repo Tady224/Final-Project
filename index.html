@@ -17,8 +17,8 @@
 </head>
 
 <body class="header">
-    <div class="container">
-        <div id="linkedIn"> Coded by
+ <div class="container">
+    <div id="linkedIn"> Coded by
             <i class="fas fa-angle-double-right"></i>
             <a href="https://www.linkedin.com/in/tatjana-richard-47865115a">Tatjana</a>
         </div>
@@ -26,12 +26,15 @@
        
         </button>
         <h3>
-
         </h3>
         <form id="search-city" 🔎>
-            <input class="city" id="city-input" type="text" placeholder="Enter a city" autocomplete="on" />
-            <input class="search" type="submit" value="🔎" />
+        <input class="city" id="city-input" type="text" placeholder="Enter a city" autocomplete="on" />
+        <input class="search" type="submit" value="🔎" />
         </form>
+
+        
+        <p id="update">Last updated: <span id="date"></span></p>
+        
 
  <button id="locationButton">📍</button>
 
@@ -42,19 +45,18 @@
         <div class="row">
         <div class="col-md6">
 
-        <ul>
-        <li>Humidity: <span id="humidity"></span> %
+        <ul id="humidityWind">
+        <li >Humidity: <span id="humidity"></span> %
         </li>
         <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
         </div>
         <div class="col-md-6">
-            <div id="today">
-                
-            </div>
-            <span class="units">
-                °C | °F
-            </span>
+    <div id="today">            
+    </div>
+    <span class="units">
+    °C | <a href="">°F</a>
+    </span>
     </div>
 
 
