@@ -10,16 +10,16 @@ let days = [
   "Friday",
   "Saturday"
 ];
-let hour = now.getUTCHours();
+let hour = now.getHours();
 if (hour < 10) {
   hour = `0:${hour}`;
 }
-let minutes = now.getUTCMinutes();
+let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0:${minutes}`;
 }
 let day = days[now.getDay()];
-h3.innerHTML = ` ${day}, ${hour}:${minutes}`;
+h3.innerHTML = `${day}, ${hour}:${minutes}`;
 
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;

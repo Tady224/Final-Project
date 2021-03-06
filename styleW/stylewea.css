@@ -2,16 +2,12 @@
   font-family: "Raleway", sans-serif;
   max-width: 1000px;
   margin: 0 auto;
-  background: linear-gradient(
-    5deg,
-    #dae2e6,
-    rgb(140, 199, 238),
-    rgb(148, 159, 172),
-    white
-  );
   padding: 10px 10px;
   border-radius: 10px;
-  color: #a1d9f3;
+  background-color: honeydew;
+  color: #5a97b3;
+
+  border-radius: 20px;
 }
 
 .city {
@@ -33,15 +29,15 @@
 }
 
 .div1 {
-  color: white;
+  color: #5a97b3;
 }
 
 #city {
   display: block;
   margin: 0 auto;
   border: rgb(255, 255, 255);
-  color: white;
-  background-color: #a1d9f300;
+  color: #5a97b3;
+  background-color: #3aa3d300;
   border-radius: 40px;
   font-size: 50px;
   padding: 10px 10px 10px;
@@ -57,7 +53,7 @@
   margin: 10px auto;
   padding: 10px 10px 10px;
   font-family: "Raleway", sans-serif;
-  color: rgb(252, 252, 252);
+  color: #5a97b3;
   position: relative;
   top: -64px;
   left: 335px;
@@ -65,7 +61,7 @@
 .header {
   display: block;
   margin: 8px;
-  color: #a1d9f3;
+  color: #5a97b3;
 }
 
 form,
@@ -73,18 +69,18 @@ h3 {
   position: relative;
   top: 0px;
   left: 100px;
-  color: rgb(244, 244, 248);
+  color: #5a97b3;
 }
 
 .units {
-  color: white;
+  color: #5a97b3;
   font-size: 15px;
   position: relative;
   top: -213px;
   right: -635px;
 }
 #today {
-  color: white;
+  color: #5a97b3;
   font-size: 60px;
   position: relative;
   top: -150px;
@@ -92,7 +88,7 @@ h3 {
 }
 
 li {
-  color: white;
+  color: #5a97b3;
   position: relative;
   top: -65px;
   left: 680px;
