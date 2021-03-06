@@ -6,7 +6,6 @@
   border-radius: 10px;
   background-color: honeydew;
   color: #5a97b3;
-
   border-radius: 20px;
 }
 
@@ -95,4 +94,11 @@ li {
   margin: 0 auto;
   font-size: 15px;
   list-style: none;
+}
+
+img {
+  width: 100px;
+  position: relative;
+  top: 80px;
+  right: -100px;
 }
