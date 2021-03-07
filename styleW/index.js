@@ -32,29 +32,34 @@ function showWeather(response) {
   document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
 }
-//API Location
-function searchLocation(position) {
-  let apiKey = "5625fc4e2f1e1a9677dec96db881138a";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude }&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showWeather);
-}
-//Current Location
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
+
 //Add forecast Weather
 function showForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+  let forecast = null;
 
-let forecastElement = document.querySelector("#forecast");
-forecastElement.innerHTML = `
-<div class="col-2">
-<h2> ${formatHours(forecast.dt *1000)} </h2>
-<img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-<div class="weather-forecast-temperature">
-<strong> ${Math.round(forecast.main.temp_max)}°</strong> ${Math.round(forecast.main.temp_min)}°
-</div>
-</div> `;
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col-2">
+      <h3>
+        ${formatHours(forecast.dt * 1000)}
+      </h3>
+      <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+      />
+      <div class="weather-forecast-temperature">
+        <strong>
+          ${Math.round(forecast.main.temp_max)}°
+        </strong>
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+    </div>
+  `;
+  }
 }
 
 //Add metric to API
@@ -67,15 +72,18 @@ function search(city) {
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);
 }
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 
 }
-
+search("Hamburg");
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#locationButton");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+

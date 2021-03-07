@@ -1,7 +1,7 @@
 .container {
   font-family: "Raleway", sans-serif;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding: 10px 10px;
   border-radius: 10px;
   background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
@@ -42,21 +42,10 @@
   padding: 10px 10px 10px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  right: 260px;
-  top: 110px;
+  right: 290px;
+  top: 300px;
 }
 
-#locationButton {
-  border-radius: 40px;
-  border: none;
-  margin: 10px auto;
-  padding: 10px 10px 10px;
-  font-family: "Raleway", sans-serif;
-  color: #f0f3f5;
-  position: relative;
-  top: -250px;
-  left: 450px;
-}
 .header {
   display: block;
   margin: 8px;
@@ -83,38 +72,38 @@ a {
   color: #f0f3f5;
   font-size: 15px;
   position: relative;
-  top: -345px;
-  right: -700px;
+  top: -195px;
+  right: -555px;
 }
 #today {
   color: #f0f3f5;
   font-size: 60px;
   position: relative;
-  top: -280px;
-  right: -630px;
+  top: -130px;
+  right: -490px;
 }
 
 #humidityWind {
   color: #f0f3f5;
   position: relative;
-  top: -210px;
-  left: 720px;
-  margin: 0 auto;
+  top: -105px;
+  left: 750px;
   font-size: 15px;
   list-style: none;
 }
 
 #icon {
-  width: 110px;
+  width: 170px;
   position: relative;
-  top: -180px;
-  right: -150px;
+  top: 30px;
+  right: -360px;
 }
 #updateDate {
   position: relative;
   top: 0px;
-  right: -350px;
+  right: -370px;
   list-style: none;
+  font-size: 20px;
 }
 
 .weather-forecast h2 {
@@ -127,16 +116,16 @@ a {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 48px;
-  width: 48px;
+  height: 70px;
+  width: 70px;
 }
 
 .weather-forecast-temperature {
   text-align: center;
   color: white;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 400;
   height: auto;
   line-height: 15px;
-  white-space: nowrap;
+  margin: 20px;
 }
