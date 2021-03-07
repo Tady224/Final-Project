@@ -32,9 +32,12 @@
         <input class="search" type="submit" value="🔎" />
         </form>
 
-        
-        <p id="update">Last updated: <span id="date"></span></p>
-        
+        <ul id="updateDate">
+
+        <li id="update">Last updated:  </li>
+            <li> <span id="date"></span></li>
+        </ul>
+
 
  <button id="locationButton">📍</button>
 
@@ -42,8 +45,8 @@
     alt=""
     id="icon"
     /> 
-        <div class="row">
-        <div class="col-md6">
+    <div class="row">
+    <div class="col-md-6">
 
         <ul id="humidityWind">
         <li >Humidity: <span id="humidity"></span> %
@@ -51,13 +54,76 @@
         <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
         </div>
-        <div class="col-md-6">
+    
+    <div class="col-md-6">
     <div id="today">            
     </div>
     <span class="units">
     °C | <a href="">°F</a>
     </span>
     </div>
+
+<div class="row weather-forecast">
+<div class="col-2">
+<h2>
+    Sun
+</h2>
+<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+<div class="weather-forecast-temperature">
+<strong>22°</strong> 17°
+</div>
+</div>
+
+
+ <div class="col-2">
+     <h2>
+            Mon
+        </h2>
+        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+        <div class="weather-forecast-temperature">
+ <strong>12°</strong> 7°
+        </div>
+    </div>
+    <div class="col-2">
+        <h2>
+            Thu
+        </h2>
+        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+        <div class="weather-forecast-temperature">
+            <strong>2°</strong> 1°
+        </div>
+    
+</div>
+    <div class="col-2">
+        <h2>
+            Wed
+        </h2>
+        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+        <div class="weather-forecast-temperature">
+            <strong>10°</strong> 15°
+        </div>
+    
+</div>
+        <div class="col-2">
+            <h2>
+                Thur
+            </h2>
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+            <div class="weather-forecast-temperature">
+                <strong>5°</strong> 7°
+            </div>
+        </div>
+            <div class="col-2">
+                <h2>
+                    Fri
+                </h2>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="">
+                <div class="weather-forecast-temperature">
+                    <strong>7°</strong> 12°
+                </div>
+            <div></div>
+</div>
+
 
 
     <script src="styleW/index.js">   </script>
