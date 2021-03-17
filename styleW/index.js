@@ -2,7 +2,13 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let days = [
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
   return `${day} ${formatHours(timestamp)}`;
@@ -24,13 +30,23 @@ function formatHours(timestamp) {
 
 //CITY TEMP HUMIDITY WIND ICON
 function showWeather(response) {
-
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#today").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("#today").innerHTML = Math.round(
+    response.data.main.temp
+  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round (response.data.wind.speed);
-  document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 //Add forecast Weather
@@ -64,7 +80,6 @@ function showForecast(response) {
 
 //Add metric to API
 function search(city) {
-
   let apiKey = "5625fc4e2f1e1a9677dec96db881138a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
@@ -77,13 +92,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-
 }
 search("Hamburg");
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", handleSubmit);
-
-let currentLocationButton = document.querySelector("#locationButton");
-currentLocationButton.addEventListener("click", getCurrentLocation);
-
-
